@@ -5,10 +5,8 @@
     Class 2:  
         2.1 Link your files in the head of the docment Add a Nav Bar to your site - It should have three links (Portfolio, About, and Contact) 
         2.2 Add a div for each section. Within section add a contatiner div with the appropriate number of rows and columns
-    Class 3:  
-        3.1 Add thumbnails and other custom component (button, modal, font) using bootstrap Documentation 
-        3.2 Add CSS and add your site to gh-pages 
--->
+        <!-- Latest compiled and minified CSS -->
+
 
 <!DOCTYPE html>
 <head>   
@@ -16,7 +14,8 @@
     
     <!-- Your CSS  -->
     
-    <!-- Bootstrap CSS  -->
+    <!-- Bootstrap CSS  --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
     <!-- Fontawesome CSS  -->
     
@@ -24,28 +23,152 @@
 
 <body>
     <!-- Nav Bar -->
-    
-    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Usman</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+     <header>
+    <div class="container" tabindex="-1" style="padding-top: 100px; padding-bottom: 50px;">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <img class="img-responsive center-block" src="https://www.jamf.com/jamf-nation/img/default-avatars/generic-user-purple.png" alt="">
+          <div class="intro-text">
+            <h1 class="name">My Name</h1>
+            <hr class="star-light">
+            <span class="skills">Student - Developer - Awesome Person</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ 
     <!-- Header -->
     
 
     <!-- Portfolio Grid Section -->
-    
+    <section id="portfolio" style="padding-top: 50px; padding-bottom: 50px; background-color: #f7f8f9">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h2>Portfolio</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Portfolio Item 1 COPY THIS SECTION TWO MORE TIMES --> 
+        <div class="col-sm-12 col-md-4">
+          <div class="thumbnail">
+            <h4 class="text-center">Project 1</h4>
+            <img src="http://sweettutos.com/wp-content/uploads/2015/12/placeholder.png" class="img-responsive" />
+            <div class="caption text-center">
+              <a>Live Site</a>| <a>Source</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item 1 COPY THIS SECTION TWO MORE TIMES --> 
+        <div class="col-sm-12 col-md-4">
+          <div class="thumbnail">
+            <h4 class="text-center">Project 1</h4>
+            <img src="http://sweettutos.com/wp-content/uploads/2015/12/placeholder.png" class="img-responsive" />
+            <div class="caption text-center">
+              <a>Live Site</a>| <a>Source</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item 1 COPY THIS SECTION TWO MORE TIMES --> 
+        <div class="col-sm-12 col-md-4">
+          <div class="thumbnail">
+            <h4 class="text-center">Project 1</h4>
+            <img src="http://sweettutos.com/wp-content/uploads/2015/12/placeholder.png" class="img-responsive" />
+            <div class="caption text-center">
+              <a>Live Site</a>| <a>Source</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
 
     <!-- About Section -->
-   
+    <section id="about" style="padding-top: 50px; padding-bottom: 50px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>About</h2>
+          <hr class="star-light">
+        </div>
+      </div>
+      <div class="row">
+        <h1>Hello!</h1>
+                <p>Hello, My name is Usman Adeel and I and currently a sophomore in High School. I go to City Polytechnic High School. I am interested in software developing and I am currently building my coding skills at Scripted; American Express. Later I’ll be working more with the tech industry as an intern as I get better. I am planning to pursue my career as a full time software developer.</p>
+        <div class="col-sm-12 col-lg-8 col-lg-offset-2">
+          </div>
+        <div class="col-sm-12 col-lg-8 col-lg-offset-2 text-center">
+          <a href="" class="btn btn-lg btn-default"> Learn More!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
     <!-- Contact Section -->
+    <!--  
+<section id="">
+    <div class="container">
+      <div class="row">
+       <div class="col-lg-12 text-center">
+         Contact
+       </div>
+      </div>
+    </div>
+   </section>
+   -->
+   <section id="Contact" style="padding-top: 50px; padding-bottom: 50px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Contact</h2>
+          <hr class="star-light">
+        </div>
+      </div>
+
 
 
     <!-- Footer -->
+<footer class="text-center" style="padding-top: 25px; padding-bottom: 25px; background: black; color: white;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>Copyright &copy; Your Website 2017</p>
+          </div>
+        </div>
+      </div>
+  </footer>
 
     
     <!-- Jquery Script -->
     
     
     <!--Bootstrap Javascript -->
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     <!-- Your Javascript -->
     
